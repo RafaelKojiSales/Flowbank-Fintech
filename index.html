@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowBank | Dashboard Financeiro</title>
+
+    <!-- Tailwind CSS - CSS puro, sem JavaScript da aplicação -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Estilos próprios separados do HTML -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand-mark">FB</div>
+
+            <nav class="nav-menu" aria-label="Menu principal">
+                <a class="nav-item active" href="#" aria-label="Dashboard">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 10.8 12 4l8 6.8v8.7a.5.5 0 0 1-.5.5h-5v-5h-5v5h-5a.5.5 0 0 1-.5-.5v-8.7Z" />
+                    </svg>
+                </a>
+                <a class="nav-item" href="#" aria-label="Cartões">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4.5 6.5h15a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16V8a1.5 1.5 0 0 1 1.5-1.5Zm.5 4h14v-2H5v2Zm2 4h4v-1.8H7v1.8Z" />
+                    </svg>
+                </a>
+                <a class="nav-item" href="#" aria-label="Transferências">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 7.5h9.2l-2.4-2.4L14.2 3 20 8.8l-5.8 5.8-1.4-2.1 2.4-2.4H6V7.5Zm12 9H8.8l2.4 2.4L9.8 21 4 15.2l5.8-5.8 1.4 2.1-2.4 2.4H18v2.6Z" />
+                    </svg>
+                </a>
+                <a class="nav-item" href="#" aria-label="Configurações">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 8.2a3.8 3.8 0 1 1 0 7.6 3.8 3.8 0 0 1 0-7.6Zm8.4 4.8-.1-1.9-2.1-.6a6.9 6.9 0 0 0-.6-1.4l1-1.9-1.4-1.4-1.9 1a7.7 7.7 0 0 0-1.4-.6L13.3 4h-2.6l-.6 2.2a7.7 7.7 0 0 0-1.4.6l-1.9-1-1.4 1.4 1 1.9a6.9 6.9 0 0 0-.6 1.4l-2.1.6-.1 1.9 2.1.8c.1.5.3 1 .6 1.5l-1 1.9 1.4 1.4 1.9-1c.5.3 1 .5 1.5.6l.6 2.2h2.6l.6-2.2c.5-.1 1-.3 1.5-.6l1.9 1 1.4-1.4-1-1.9c.3-.5.5-1 .6-1.5l2.1-.8Z" />
+                    </svg>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">Conta digital inteligente</p>
+                    <h1>Dashboard FlowBank</h1>
+                    <p class="subtitle">Olá, Rafael. Aqui está seu resumo financeiro de abril de 2026.</p>
+                </div>
+
+                <div class="topbar-actions">
+                    <div class="search-box">
+                        <span>⌕</span>
+                        <input type="text" value="Buscar movimentações" aria-label="Buscar movimentações" readonly>
+                    </div>
+                    <div class="avatar" aria-label="Perfil do usuário">RS</div>
+                </div>
+            </header>
+
+            <section class="hero-grid">
+                <article class="balance-card">
+                    <div class="balance-card__header">
+                        <div>
+                            <p class="card-label">Saldo disponível</p>
+                            <strong>R$ 4.250,90</strong>
+                        </div>
+                        <span class="chip">Conta Plus</span>
+                    </div>
+
+                    <div class="card-visual" aria-label="Cartão virtual FlowBank">
+                        <div class="card-visual__shine"></div>
+                        <p>FlowBank Black</p>
+                        <strong>•••• 4827</strong>
+                        <span>Validade 08/29</span>
+                    </div>
+
+                    <div class="quick-actions">
+                        <a href="#" class="action-button primary">↗ Transferir</a>
+                        <a href="#" class="action-button">▣ Pagar</a>
+                        <a href="#" class="action-button">⚡ Pix</a>
+                    </div>
+                </article>
+
+                <article class="health-card">
+                    <div class="health-score" role="img" aria-label="Saúde financeira 84 de 100">
+                        <span>84</span>
+                    </div>
+                    <div>
+                        <p class="card-label">Saúde financeira</p>
+                        <h2>Excelente controle</h2>
+                        <p>Você economizou 18% a mais do que no mês anterior e manteve as despesas dentro do orçamento.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="metrics-grid" aria-label="Indicadores financeiros">
+                <article class="metric-card income">
+                    <span class="metric-icon">↑</span>
+                    <p>Receitas</p>
+                    <strong>R$ 6.050,00</strong>
+                    <small>+12% vs. mês anterior</small>
+                </article>
+
+                <article class="metric-card expense">
+                    <span class="metric-icon">↓</span>
+                    <p>Despesas</p>
+                    <strong>R$ 1.799,10</strong>
+                    <small>Dentro do limite planejado</small>
+                </article>
+
+                <article class="metric-card savings">
+                    <span class="metric-icon">◆</span>
+                    <p>Economia mensal</p>
+                    <strong>R$ 1.320,00</strong>
+                    <small>Meta mensal 76% concluída</small>
+                </article>
+
+                <article class="metric-card credit">
+                    <span class="metric-icon">◷</span>
+                    <p>Limite do cartão</p>
+                    <strong>R$ 3.780,00</strong>
+                    <small>42% utilizado</small>
+                </article>
+            </section>
+
+            <section class="content-grid">
+                <article class="panel flow-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="card-label">Fluxo mensal</p>
+                            <h2>Receitas x despesas</h2>
+                        </div>
+                        <span class="period-pill">Abril 2026</span>
+                    </div>
+
+                    <div class="chart" aria-label="Gráfico visual de fluxo mensal">
+                        <div class="chart-column"><span class="bar income-bar h-72"></span><span>Sem 1</span></div>
+                        <div class="chart-column"><span class="bar expense-bar h-44"></span><span>Sem 2</span></div>
+                        <div class="chart-column"><span class="bar income-bar h-96"></span><span>Sem 3</span></div>
+                        <div class="chart-column"><span class="bar expense-bar h-56"></span><span>Sem 4</span></div>
+                        <div class="chart-column"><span class="bar income-bar h-80"></span><span>Hoje</span></div>
+                    </div>
+
+                    <div class="legend">
+                        <span><i class="legend-income"></i> Entradas</span>
+                        <span><i class="legend-expense"></i> Saídas</span>
+                    </div>
+                </article>
+
+                <article class="panel category-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="card-label">Categorias</p>
+                            <h2>Maiores gastos</h2>
+                        </div>
+                    </div>
+
+                    <div class="category-list">
+                        <div class="category-row">
+                            <div><span>🛒</span><p>Alimentação</p></div>
+                            <strong>R$ 431,20</strong>
+                            <div class="progress"><i style="width: 78%;"></i></div>
+                        </div>
+                        <div class="category-row">
+                            <div><span>💡</span><p>Contas fixas</p></div>
+                            <strong>R$ 187,45</strong>
+                            <div class="progress"><i style="width: 44%;"></i></div>
+                        </div>
+                        <div class="category-row">
+                            <div><span>🎬</span><p>Entretenimento</p></div>
+                            <strong>R$ 39,90</strong>
+                            <div class="progress"><i style="width: 22%;"></i></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="panel goal-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="card-label">Meta ativa</p>
+                            <h2>Reserva de emergência</h2>
+                        </div>
+                        <strong>68%</strong>
+                    </div>
+                    <p class="panel-text">Faltam R$ 3.200,00 para atingir sua reserva ideal de 6 meses.</p>
+                    <div class="goal-progress"><i></i></div>
+                    <div class="goal-values">
+                        <span>R$ 6.800,00</span>
+                        <span>R$ 10.000,00</span>
+                    </div>
+                </article>
+
+                <article class="panel transaction-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="card-label">Últimas movimentações</p>
+                            <h2>Extrato recente</h2>
+                        </div>
+                        <a href="#" class="view-all">Ver tudo</a>
+                    </div>
+
+                    <div class="transactions">
+                        <div class="transaction-item highlighted">
+                            <span class="transaction-icon">💼</span>
+                            <div>
+                                <strong>Salário Mensal</strong>
+                                <p>28 Abr 2026 · Receita</p>
+                            </div>
+                            <em class="positive">+ R$ 5.200,00</em>
+                        </div>
+
+                        <div class="transaction-item">
+                            <span class="transaction-icon">🛒</span>
+                            <div>
+                                <strong>Supermercado Extra</strong>
+                                <p>27 Abr 2026 · Alimentação</p>
+                            </div>
+                            <em class="negative">- R$ 245,80</em>
+                        </div>
+
+                        <div class="transaction-item">
+                            <span class="transaction-icon">⚡</span>
+                            <div>
+                                <strong>Transferência recebida</strong>
+                                <p>25 Abr 2026 · Pix</p>
+                            </div>
+                            <em class="positive">+ R$ 850,00</em>
+                        </div>
+
+                        <div class="transaction-item">
+                            <span class="transaction-icon">💡</span>
+                            <div>
+                                <strong>Conta de Luz</strong>
+                                <p>24 Abr 2026 · Contas</p>
+                            </div>
+                            <em class="negative">- R$ 187,45</em>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
